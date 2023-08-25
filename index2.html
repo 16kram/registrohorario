@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Autenticacion de usuario</title>
+  </head>
+  <body>
+	  <!--Autenticación-->
+	  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Registro de horario</a>
+    <form class="d-flex" role="search" action="procesarlogin.php" method="POST">
+		<input class="form-control me-2" type="text" placeholder="Usuario" aria-label="Buscar" name="usuario" pattern="^([a-z]+[0-9]{0,2}){5,12}$"required >
+      <input class="form-control me-2" type="password" placeholder="Contraseña" aria-label="Buscar" name="password" pattern="[A-Za-z0-9!?-]{8,12}" required>
+      <button class="btn btn-outline-success" type="submit">Login</button>
+    </form>
+  </div>
+</nav>
+    <div class="container">
+  <!-- Registro nuevo usuario -->
+  <br><br>
+  <p>Para fichar debe de estar registrado como usuario, si no lo está hagalo aquí abajo.</p><br><br>
+  <h1>Registro de nuevo usuario</h1><br>
+  <form action="registro_usuario.php" method="POST">
+  <div class="mb-3">
+    <label for="usuario" class="form-label">Usuario</label>
+    <input type="usuario" class="form-control" id="usuario" name="usuario" pattern="^([a-z]+[0-9]{0,2}){5,12}$"required title="Escriba su usuario">
+  </div>
+  <div class="mb-3">
+    <label for="pasword" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="password" name="password" pattern="[A-Za-z0-9!?-]{8,12}" required title="Escriba su contraseña">
+  </div>
+  <button type="submit" class="btn btn-primary" title="Para registrarse pulse este botón">Registrar usuario</button>
+</form>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
