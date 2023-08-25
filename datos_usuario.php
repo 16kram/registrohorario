@@ -41,7 +41,7 @@ $email=$_POST['email'];
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Datos guardados</h5>
-    <p class="card-text">Pulse el botón para volver a la página principal y autentiquese</p>
+    <p class="card-text">Pulse el botón para volver a la página principal y autentiquese.</p>
     <a href="index2.html" class="btn btn-primary">Volver</a>
   </div>
 </div>
